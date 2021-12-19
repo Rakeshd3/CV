@@ -1,122 +1,195 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Rakesh's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="../static/resume_style.css" rel="stylesheet">
+    <link href="../static/images/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-
-<table cellspacing="15">
-    <tr>
-        <td><img src="image.jpg" alt="My ProfilePicture"></td>
-        <td> <h3>Rakesh kumar Dash</h3></td>
-    </tr>
-    <tr><td>About Me:</td>
-        <td>Passionate Learner,Expertise in Python,SQL,Profiecient in API,HTTP request call </td>
-    </tr>
-    <tr>
-        <td> Contact me: <a></a></td>
-        <td><a href="mycontact.html">👉 Click Here   👈</a></td>
-    </tr>
-
-</table >
 <body>
 
+<div class='bg-orange text-dark' id="container">
+    <table cellspacing="15">
+        <tr>
+            <td><img alt="My ProfilePicture" src="../static/images/my_img.jpg" width="125px"></td>
+            <td><h3>Rakesh kumar Dash</h3></td>
+        </tr>
+        <tr>
+            <td>About Me:</td>
+            <td><span class="learn"><em>Passionate Learner</em></span>,Expertise in Python,SQL<br>Proficient in Tableau
+                Visualization, Data Analysis using
+                python,Advance Excel<br>good understanding in ML algorithms,data structure
+            </td>
+        </tr>
+        <tr>
+            <td> Contact me: <a></a></td>
+            <td><a href="../templates/contact.html">👉 Click Here 👈</a></td>
+        </tr>
 
-        <hr>
-        <p><strong>Work Experience</strong></p>
-        <table cellspacing="10">
-            <thead>
-            <tr>
-                <th>Period In Current Job</th>
-                <th>Current Employer</th>
+    </table>
 
-            </tr>
-            </thead>
-            <tr>
-                <td>04-26-2018 to Current: </td>
-                <td> Data Engineer,CyientLTD</td>
-            </tr>
+</div>
+<div class='bg-orange text-dark' id='time_frame'>
+    <p><strong>Work Experience</strong>
+    <p>
+    <table cellspacing="10">
+        <thead>
+        <tr>
+            <th class="tf">Time Frame</th>
+            <th class="exp">Employer</th>
 
-        </table>
-        <hr size="3">
-        <p><strong>Skills</strong></p>
-        <table>
-            <tr>
-                <td><a href="https://www.hackerrank.com/rakeshdash6180"><strong> Python</strong></a></td>
-                <td>⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.hackerrank.com/rakeshdash6180"><strong>SQL</strong></a></td>
-                <td>⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td><strong>PowerBI</strong></td>
-                <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td><strong>Machine Learning</strong></td>
-                <td>⭐⭐⭐</td>
-            </tr>
-               <tr>
-                <td><strong>API</strong></td>
-                <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td><strong>JSON</strong></td>
-                <td>⭐⭐⭐</td>
-            </tr>
+        </tr>
+        </thead>
+        <tbody >
+        <tr>
+            <td class="tf">05-07-2021 to Present</td>
+            <td class="exp">Data Analyst,Zeta Global</td>
+        </tr>
 
-        </table><br>
-        <hr>
-        <h2>Projects</h2>
-        <p><strong>Project Aircraft Identification Statistics</strong></p>
-        <p><strong>Skills Used: Python, SQL</strong></p>
-        <ol>
-            Developed A Simple Tool using tkinter, for keeping Credentials for all the project related tokens,key fields,team can change their project related restricted website credentials with simple click.
-        </ol>
-        <ol>
-            Developed automated Mail sending script scheduled with batch script when data is being updated in database.
-        </ol>
-        <ol> Developed A script that can download attachments from client website using http request.
-        </ol>
-        <p><strong>Project-Scheduled Interuption</strong><br>
-        <p><strong>Skills Used: Python, SQL Complex Queries</strong></p>
-        <ol>
-            <p>Extracted maintenance text data from Teradata server using python by running complex SQL
-                Queries.</p>
-            <p>Developed Python scripts to Visualize, finding insights on component failure, replacement
-                frequency with regard to
-                customer requirements.</p>
+        <tr >
+            <td class="tf">04-26-2018 to 05-07-2021</td>
+            <td class="exp">Reliability Analyst,Cyient LTD</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class='bg-orange text-dark' id='Skills'>
 
-        </ol>
+    <table>
+        <h3 class="skl">Skills</h3>
+        <th class="skl" cellspacing='1'>Language</th>
+        <th class="skl">Expertise level</th>
 
-        <ol>
-            <p>Developed Different Visualization script Using Matplotlib, Seaborn and Plotly Visualization library.</p>
-            <p>Created a Script that will convert 100s of XML files into one CSV file using python's
-                XmlElementTree library.</p>
-        </ol>
-        <p><strong>Project-Logbooks and Removals</strong><br></p>
-        <p><strong>Skills Used: Python, SQL Complex Queries</strong></p>
-        <ol>
-            Extracted Data from Teradata using Teradata python client connection generated data using
-            SQL complex queries for ATA, Logbook, Removals data for helping in generating PowerBI Trend Metrics.
-        </ol>
-        <ol>
-            Assisted in Power BI Dashboard Development using Bar charts, line charts, Gauge charts, Scaler
-            charts, KPI etc., also applied Visual level filters, Page Level filters, Report Level Filters, Bu􀂂ons
-            and Report Page Tool
-        </ol>
-        <hr>
-        <h3>Certifications</h3>
-        <a href="https://www.coursera.org/account/accomplishments/records/KMWZCCGL47JF" >1. Machine Learning With Python - IBM<a></a><br>
-            <a href="https://www.coursera.org/account/accomplishments/records/T9AT9K8SL2S5">2. Understanding and Visualizing Data with Python<a></a><br>
 
-                <a href="https://www.coursera.org/account/accomplishments/records/ZF2VBQ3GARK8">3. Neural Networks and Deep Learning<a></a><br>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/7TEGN5PN2HBF">4. Natural Language Processing in TensorFlow<a></a>
+        <tr class="skl">
+            <td class="skl"><a href="https://www.hackerrank.com/rakeshdash6180"><strong>Python</strong></a></td>
+            <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr class="skl">
+            <td class="skl"><a href="https://www.hackerrank.com/rakeshdash6180"><strong>SQL</strong></a></td>
+            <td class="rating">⭐⭐⭐⭐</td>
+        <tr class="skl">
+            <td class="skl"><strong>Data Analysis</strong></td>
+            <td class="rating">⭐⭐⭐⭐</td>
+        </tr>
 
-                    </a>
+        <tr class="skl">
+            <td class="skl"><strong>Tableau</strong></td>
+            <td class="rating">⭐⭐⭐</td>
+        </tr>
+        <tr class="skl">
+            <td class="skl"><strong>Machine Learning</strong></td>
+            <td class="rating">⭐⭐⭐</td>
+        </tr>
 
-                </a>
-            </a>
-            <hr>
+        <tr class="skl">
+            <td class="skl"><strong>Microsoft Excel</strong></td>
+            <td class="rating">⭐⭐⭐</td>
+        </tr>
+        <tr class="skl">
+            <td class="skl"><strong> HTML & CSS </strong></td>
+            <td class="rating">⭐⭐⭐</td>
+        </tr>
+
+    </table>
+    <br>
+</div>
+
+<div class='bg-orange text-dark' id='experience'>
+     <h3>Zeta Global</h3>
+    <p><strong>Digital Marketing Domain:</strong></p>
+    <p><strong>Client: Ralph Lauren<br>
+    Skills Used: SQL,Advanced Excel,Python,SAS,Tableu</strong></p>
+    <ol>
+        Assited in generating Daily Weekly, Monthly ,Qurterly and Yearly Metrics for different level marketing campaigns that includes email marketing, mobile ads marketing, video ads etc.
+    </ol>
+    <ol>
+        Generated many analysis reports according to adhoc requests from clients which involves complex querying in different level database table relationship breakdown,creating unique population generating metrics with required metrics
+    </ol>
+    <ol> Worked parallely with SAS and Python Environment for generating required metrics for any adhoc task for store reports, demographic reports, young customer metrics which helps in generally for weekly, monthly and yearly reports
+    </ol>
+    <ol>Generated Email opt in opt out reports on weekly basis using roll up tables and tableu dashboards. </ol>
+    <p><strong>Client: THE VERY GROUP</strong><br>
+    <p><strong>Skills Used: Tableau, Advanced Excel</strong></p>
+    <ol>
+        <p>Helped and maintained Tableu dashboards creation on weekly basis ,involves adhoc requests and </p>
+        <p>complex query analysis when required, aditional quality check on visuals and additional visual changes etc.</p>
+
+    </ol>
+
+    <p><strong>Client : AMCN,CNN</strong><br></p>
+    <p><strong>Skills Used: Tableau, Advanced Excel</strong></p>
+    <ol>
+Helped and maintained Tableu dashboards creation on weekly ,dailybasis ,involves adhoc requests and complex query analysis when required, aditional quality check on visuals and additional visual changes,data extraction and update with required inputs etc
+    </ol>
+    <p><strong>Client : Charter</strong><br></p>
+    <p><strong>Skills Used: Python,Advanced Excel, Data Visualization,Statistics<br>Interface: Spark Machine</strong></p>
+    <ol>Weekly reports Decile level aggregation, subject line categorization using regex for different language mostly english and spanish campaigns
+It involves Email Level campaign analysis, optin optout metrics,prediction for next week of different campaigns success rate etc</ol>
+    <p><strong>BAU Task Automation : </strong><br></p>
+    <p><strong>Skills Used: Python,SnowSQL</strong></p>
+    <ol>Automated a task which runs snow sql queries in snow sql environment creates a match file which needed to place in sftp server and notify team.</ol>
+
+    <h3>Cyient LTD</h3>
+    <p><strong>Project Aircraft Identification Statistics</strong></p>
+    <p><strong>Skills Used: Python, SQL</strong></p>
+    <ol>
+        Developed A Simple Tool using tkinter, for keeping Credentials for all the project related tokens,key
+        fields,team can change their project related restricted website credentials with simple click.
+    </ol>
+    <ol>
+        Developed automated Mail sending script scheduled with batch script when data is being updated in database.
+    </ol>
+    <ol> Developed A script that can download attachments from client website using http request.
+    </ol>
+    <p><strong>Project-Scheduled Interruption</strong><br>
+    <p><strong>Skills Used: Python, SQL Complex Queries</strong></p>
+    <ol>
+        <p>Extracted maintenance text data from Teradata server using python by running complex SQL
+            Queries.</p>
+        <p>Developed Python scripts to Visualize, finding insights on component failure, replacement
+            frequency with regard to
+            customer requirements.</p>
+
+    </ol>
+
+    <ol>
+        <p>Developed Different Visualization script Using Matplotlib, Seaborn and Plotly Visualization library.</p>
+        <p>Created a Script that will convert 100s of XML files into one CSV file using python's
+            XmlElementTree library.</p>
+    </ol>
+    <p><strong>Project-Logbooks and Removals</strong><br></p>
+    <p><strong>Skills Used: Python, SQL Complex Queries</strong></p>
+    <ol>
+        Extracted Data from Teradata using Teradata python client connection generated data using
+        SQL complex queries for ATA, Logbook, Removals data for helping in generating PowerBI Trend Metrics.
+    </ol>
+    <ol>
+        Assisted in Power BI Dashboard Development using Bar charts, line charts, Gauge charts, Scaler
+        charts, KPI etc., also applied Visual level filters, Page Level filters, Report Level Filters, buttons
+        and Report Page Tool
+    </ol>
+</div>
+<div class='bg-orange text-dark' id="certification">
+    <h3>Certifications</h3>
+    <ol>
+    <a href="https://www.coursera.org/account/accomplishments/records/KMWZCCGL47JF">1. Machine Learning With Python
+        -IBM</a></ol>
+    <ol><a href="https://www.coursera.org/account/accomplishments/records/T9AT9K8SL2S5">2. Understanding and
+        Visualizing Data with Python</a></ol>
+
+    <ol><a href="https://www.coursera.org/account/accomplishments/records/ZF2VBQ3GARK8">3. Neural Networks and Deep
+        Learning</a></ol>
+    <ol><a href="https://www.coursera.org/account/accomplishments/verify/7TEGN5PN2HBF">4. Natural Language Processing
+        in TensorFlow</a>
+    </ol>
+</div>
 </body>
+</html>
