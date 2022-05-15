@@ -149,3 +149,8 @@ a:hover {
 width:25%;
   border-radius:5%;
 }
+span.rev { unicode-bidi:bidi-override; direction:rtl }
+span.rev.phone:before { content:"21 89 33 8007 " }
+span.rev.phone:after { content:" 19+ :enohP" }
+span.rev.email:before { content:"256hsekarhsad"}
+span.rev.email:after { content:"moc.liamg@ :liamE" }
