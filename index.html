@@ -1,70 +1,166 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Rakesh Dash</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakesh Dash - Data Engineer</title>
+  <meta name="description" content="Data Engineer specializing in probabilistic matching, data pipelines, and PySpark">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico">
 </head>
-
 <body>
-  <div class="top-container">
-    <img class="top-cloud" src="cloud.png" alt="cloud">
-    <div class="title-text">
-      <h1>I'm Rakesh.</h1>
-      <h2>a python.<span class="pro">pro</span>grammer.</h2>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="name">Rakesh Dash</h1>
+      <p class="tagline">Data Engineer | ETL Specialist | Workflow Automation Enthusiast</p>
     </div>
-    <img class="bottom-cloud" src="cloud.png" alt="cloud">
-    <img class="mountain" src="../CV/cool_coder.png" alt="mountain-img">
-  </div>
-
+  </header>
   <div class="middle-container">
     <div class="profile">
-      <img src="my_img.jpg" alt="rakesh-profile-img">
-      <h2>Hey, Guys!</h2>
-      <p class="intro">I am a Data Analyst. Good In any SQL platform,Excellent in Python Pandas,Numpy,Visualization and ML libraries .</p>
+      <img class="profile-pic" src="images/rakesh.png" alt="Rakesh Dash">
+      <h2>Hello!</h2>
+      <p class="intro">Data Engineer specializing in probabilistic matching algorithms, ETL pipelines, and large-scale data processing with PySpark.</p>
     </div>
     <hr>
+
+    <!-- Skills Section -->
     <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="code-img" src="cat_coding.PNG" alt="code-img">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Core Competencies</h3>
+          <div class="skill-bars compact">
+            <div class="bar" data-skill="Python" data-percent="95">
+              <div class="bar-title">Python</div>
+              <div class="bar-fill"></div>
+            </div>
+            <div class="bar" data-skill="PySpark" data-percent="90">
+              <div class="bar-title">PySpark</div>
+              <div class="bar-fill"></div>
+            </div>
+            <div class="bar" data-skill="SQL" data-percent="88">
+              <div class="bar-title">SQL</div>
+              <div class="bar-fill"></div>
+            </div>
+            <div class="bar" data-skill="ETL Development" data-percent="90">
+              <div class="bar-title">ETL Development</div>
+              <div class="bar-fill"></div>
+            </div>
+            <div class="bar" data-skill="Workflow Automation" data-percent="85">
+              <div class="bar-title">Workflow Automation</div>
+              <div class="bar-fill"></div>
+            </div>
+            <div class="bar" data-skill="Data Transformation" data-percent="88">
+              <div class="bar-title">Data Transformation</div>
+              <div class="bar-fill"></div>
+            </div>
+            <div class="bar" data-skill="Performance Tuning" data-percent="82">
+              <div class="bar-title">Performance Tuning</div>
+              <div class="bar-fill"></div>
+            </div>
+          </div>
+        </div>
 
-        <h3>Design & Development</h3>
-        <p>I started learning to code when I was 26 years old because I found Machine Learning/AI fascinating . Over time, I have gained a wealth of experience designing and modeling statistical metrics.</p>
-
+          <h3>Tools & Platforms</h3>
+          <div class="tools-grid">
+            <div class="tool-item"><i class="fas fa-database"></i><span>Snowflake</span></div>
+            <div class="tool-item"><i class="fas fa-cloud"></i><span>GCP</span></div>
+            <div class="tool-item"><i class="fas fa-cloud"></i><span>Azure</span></div>
+            <div class="tool-item"><i class="fas fa-code-branch"></i><span>Git</span></div>
+            <div class="tool-item"><i class="fas fa-project-diagram"></i><span>Databricks</span></div>
+            <div class="tool-item"><i class="fas fa-cogs"></i><span>Airflow</span></div>
+            <div class="tool-item"><i class="fas fa-tools"></i><span>Jenkins</span></div>
+            <div class="tool-item"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
+            <div class="tool-item"><i class="fas fa-chart-pie"></i><span>Tableau</span></div>
+          </div>
+        </div>
       </div>
-      <div class="skill-row">
-        <img class="animated-img" src="movies.png" alt="animated-img">
+    </div>
+    <hr>
 
-        <h3>Movies,TV Series</h3>
-        <p>But my best skill is watching interesting TV Series 😉. I watch I create my own story live there in peace 😇.</p>
+    <!-- Portfolio Projects Section -->
+    <div class="projects">
+      <h2>Portfolio Projects</h2>
+      <div class="project-links">
+        <div class="project-item">
+          <h3>Data Quality Checker</h3>
+          <p>Automated pipeline for validating data integrity and completeness using Python, Pandas, PySpark, and CI/CD integrations.</p>
+          <a class="btn" href="data-quality.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+          <h3>Optimized ETL Pipeline</h3>
+          <p>Highly efficient data workflows with performance tuning in PySpark and Snowflake.</p>
+          <a class="btn" href="etl-pipeline.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+          <h3>Probabilistic Matching System</h3>
+          <p>Initial record linkage solution using NLP and fuzzy matching techniques. Early-stage data cleansing and reconciliation strategy.</p>
+          <a class="btn" href="portfolio.html" target="_blank">View Project</a>
+        </div>
+      </div>
 
       </div>
     </div>
     <hr>
+
+    <!-- GitHub Testimonials Section -->
+    <div class="testimonials">
+      <h2>What I've Delivered</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial">
+          <p><i class="fas fa-code-branch"></i> "Built high-performance data pipelines with 85%+ test coverage, reducing data lag to under 5 minutes."</p>
+        </div>
+        <div class="testimonial">
+          <p><i class="fas fa-fingerprint"></i> "Implemented scalable record linkage with probabilistic scoring, improving match accuracy by 92%."</p>
+        </div>
+        <div class="testimonial">
+          <p><i class="fas fa-tachometer-alt"></i> "Optimized PySpark transformations to reduce ETL runtime by 40% across 50M+ daily records."</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Contact Section -->
     <div class="contact-me">
       <h2>Get In Touch</h2>
-      <h3>Lets, find out which are those movies you liked the most.</h3>
-      <p class="contact-message">Love TV Series,Movies of any language as much as I do? Let's talk about how awesome they are! We can code 🤝 while we're 👀 movies! Not the Way movie stars do code in movies 🤪.</p>
-      <a class="btn" href="../CV/mycontact.html">CONTACT ME</a>
+      <h3>For data engineering and matching algorithm projects</h3>
+      <p class="contact-message">Interested in robust data solutions or probabilistic matching implementations? Let's discuss!</p>
+      <a class="btn" href="mailto:rakeshdash6180@gmail.com">CONTACT ME</a>
     </div>
   </div>
 
-
   <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/rakeshdash007">LinkedIn</a>
-     <a class="footer-link"href="https://www.instagram.com/collaquial/" >Instagram</a>
-    <a class="footer-link" href="https://twitter.com/RakeshD32955119">Twitter</a>
-    <a class="footer-link" href="resume.html">Resume</a>
-    <p class="copyright">© 2022 Rakesh</p>
+    <a class="footer-link" href="https://www.linkedin.com/in/rakeshdash007"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a class="footer-link" href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a>
+    <a class="footer-link" href="Resume.pdf"><i class="fas fa-file-pdf"></i> Resume</a>
+    <a class="footer-link" href="portfolio.html"><i class="fas fa-laptop-code"></i> Portfolio</a>
+    <p class="copyright">© <span id="year"></span> Rakesh Dash. All rights reserved.</p>
   </div>
-</body>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      animateSkillBars();
+    });
+
+    function animateSkillBars() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const bar = entry.target;
+            const percent = bar.getAttribute('data-percent');
+            bar.querySelector('.bar-fill').style.width = percent + '%';
+            observer.unobserve(bar);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('.bar').forEach(bar => {
+        observer.observe(bar);
+      });
+    }
+  </script>
+</body>
 </html>
