@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Resume — Rakesh Dash</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="container nav-inner">
+    <a href="index.html" class="logo">RD<span>.io</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="courses.html">Courses</a>
+      <a href="astroveda.html" class="astro-link">✦ AstroVeda</a>
+      <a href="resume.html">🔒</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ── PIN GATE ────────────────────────────────── -->
+  <div class="pin-gate" id="pin-gate">
+    <div class="card">
+      <div style="font-size:48px;margin-bottom:16px">🔒</div>
+      <h2>Resume Access</h2>
+      <p>This section is private. Enter your 4-digit PIN to access resume downloads.</p>
+
+      <div class="pin-dots">
+        <div class="pin-dot empty" id="d0"></div>
+        <div class="pin-dot empty" id="d1"></div>
+        <div class="pin-dot empty" id="d2"></div>
+        <div class="pin-dot empty" id="d3"></div>
+      </div>
+
+      <div class="pin-pad">
+        <button class="pin-btn" data-val="1">1</button>
+        <button class="pin-btn" data-val="2">2</button>
+        <button class="pin-btn" data-val="3">3</button>
+        <button class="pin-btn" data-val="4">4</button>
+        <button class="pin-btn" data-val="5">5</button>
+        <button class="pin-btn" data-val="6">6</button>
+        <button class="pin-btn" data-val="7">7</button>
+        <button class="pin-btn" data-val="8">8</button>
+        <button class="pin-btn" data-val="9">9</button>
+        <button class="pin-btn blank"></button>
+        <button class="pin-btn" data-val="0">0</button>
+        <button class="pin-btn del" data-val="del">⌫</button>
+      </div>
+
+      <button class="pin-submit" id="pin-submit" onclick="checkPin()">Unlock →</button>
+      <div class="pin-error" id="pin-error"></div>
+    </div>
+  </div>
+
+  <!-- ── UNLOCKED ────────────────────────────────── -->
+  <div class="resume-unlocked" id="resume-unlocked">
+
+    <div class="unlock-bar">
+      <div class="unlock-dot"></div>
+      <span>Unlocked</span>
+      <button class="btn btn-ghost btn-sm" style="margin-left:auto" onclick="location.reload()">🔒 Lock</button>
+    </div>
+
+    <div class="sec-title"><span>Download Resume</span></div>
+    <p style="color:var(--muted);font-size:13.5px;margin-bottom:24px;line-height:1.7">
+      Two role targets × two visual styles = four downloads. Use the <strong style="color:var(--text)">ATS Classic</strong> for large company portals and recruiters (Naukri, LinkedIn Easy Apply). Use <strong style="color:var(--text)">Tech Modern</strong> for direct applications and startup/tech company hiring managers.
+    </p>
+
+    <div class="dl-grid">
+      <div class="card dl-card card-top-cyan">
+        <div style="font-size:28px;margin-bottom:10px">🏢</div>
+        <div class="dl-name">DE · ATS Classic</div>
+        <div class="dl-desc">Senior Data Engineer<br>Bank &amp; enterprise safe</div>
+        <button class="btn btn-outline btn-sm" style="width:100%" onclick="downloadResume('de-ats')">↓ Download</button>
+      </div>
+      <div class="card dl-card card-top-purple">
+        <div style="font-size:28px;margin-bottom:10px">💻</div>
+        <div class="dl-name">DE · Tech Modern</div>
+        <div class="dl-desc">Senior Data Engineer<br>Startups &amp; tech roles</div>
+        <button class="btn btn-sm" style="width:100%;background:rgba(99,102,241,.2);color:#818CF8;border:1px solid rgba(99,102,241,.4)" onclick="downloadResume('de-tech')">↓ Download</button>
+      </div>
+      <div class="card dl-card card-top-amber">
+        <div style="font-size:28px;margin-bottom:10px">📊</div>
+        <div class="dl-name">AE · ATS Classic</div>
+        <div class="dl-desc">Analytics Engineer<br>Bank &amp; enterprise safe</div>
+        <button class="btn btn-sm" style="width:100%;background:rgba(245,158,11,.2);color:var(--amber);border:1px solid rgba(245,158,11,.4)" onclick="downloadResume('ae-ats')">↓ Download</button>
+      </div>
+      <div class="card dl-card card-top-green">
+        <div style="font-size:28px;margin-bottom:10px">🔮</div>
+        <div class="dl-name">AE · Tech Modern</div>
+        <div class="dl-desc">Analytics Engineer<br>Startups &amp; tech roles</div>
+        <button class="btn btn-sm" style="width:100%;background:rgba(16,185,129,.2);color:var(--green);border:1px solid rgba(16,185,129,.4)" onclick="downloadResume('ae-tech')">↓ Download</button>
+      </div>
+    </div>
+
+    <div class="dl-tip">
+      💡 <strong style="color:var(--text)">How to save as PDF:</strong>
+      Open the downloaded HTML file in Chrome or Edge → press <strong style="color:var(--text)">Ctrl+P</strong> (Cmd+P on Mac) → change destination to <strong style="color:var(--text)">"Save as PDF"</strong> → set margins to None → Print. For best results use A4 paper size.
+    </div>
+
+    <div style="margin-top:24px;padding:16px 18px;background:var(--card);border:1px solid var(--border);border-radius:8px;font-size:12.5px;color:var(--muted);line-height:1.7">
+      🎯 <strong style="color:var(--text)">Which to use:</strong>
+      Job says PySpark / Kafka / Airflow / pipeline → <span style="color:var(--cyan)">DE templates</span>.
+      Job says dbt / Snowflake / data modeling / ELT → <span style="color:var(--amber)">AE templates</span>.
+      ATS Classic = single column, Naukri/portal friendly.
+      Tech Modern = dark header, startup/tech company friendly.
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="container"><span>Rakesh Dash · Private Resume Access — 2025</span></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

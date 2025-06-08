@@ -3,164 +3,363 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakesh Dash - Data Engineer</title>
-  <meta name="description" content="Data Engineer specializing in probabilistic matching, data pipelines, and PySpark">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="images/favicon.ico">
+  <meta name="description" content="Rakesh Dash — Senior Data Engineer at HSBC, Bengaluru. Building data platforms, teaching data engineering, and exploring Vedic astrology.">
+  <title>Rakesh Dash</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="name">Rakesh Dash</h1>
-      <p class="tagline">Data Engineer | ETL Specialist | Workflow Automation Enthusiast</p>
-    </div>
-  </header>
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-pic" src="images/rakesh.png" alt="Rakesh Dash">
-      <h2>Hello!</h2>
-      <p class="intro">Data Engineer specializing in probabilistic matching algorithms, ETL pipelines, and large-scale data processing with PySpark.</p>
-    </div>
-    <hr>
 
-    <!-- Skills Section -->
-    <div class="skills">
-      <h2>My Skills</h2>
-      <div class="skills-container">
-        <div class="skill-category">
-          <h3>Core Competencies</h3>
-          <div class="skill-bars compact">
-            <div class="bar" data-skill="Python" data-percent="95">
-              <div class="bar-title">Python</div>
-              <div class="bar-fill"></div>
-            </div>
-            <div class="bar" data-skill="PySpark" data-percent="90">
-              <div class="bar-title">PySpark</div>
-              <div class="bar-fill"></div>
-            </div>
-            <div class="bar" data-skill="SQL" data-percent="88">
-              <div class="bar-title">SQL</div>
-              <div class="bar-fill"></div>
-            </div>
-            <div class="bar" data-skill="ETL Development" data-percent="90">
-              <div class="bar-title">ETL Development</div>
-              <div class="bar-fill"></div>
-            </div>
-            <div class="bar" data-skill="Workflow Automation" data-percent="85">
-              <div class="bar-title">Workflow Automation</div>
-              <div class="bar-fill"></div>
-            </div>
-            <div class="bar" data-skill="Data Transformation" data-percent="88">
-              <div class="bar-title">Data Transformation</div>
-              <div class="bar-fill"></div>
-            </div>
-            <div class="bar" data-skill="Performance Tuning" data-percent="82">
-              <div class="bar-title">Performance Tuning</div>
-              <div class="bar-fill"></div>
+<!-- ── HEADER ───────────────────────────────────── -->
+<header>
+  <nav class="container nav-inner">
+    <a href="index.html" class="logo">RD<span>.io</span></a>
+    <div class="nav-links">
+      <a href="courses.html">Courses</a>
+      <a href="astroveda.html" class="astro-link">✦ AstroVeda</a>
+      <a href="resume.html">🔒</a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-shell">
+
+  <!-- ── SIDEBAR ──────────────────────────────── -->
+  <aside class="sidebar">
+
+    <img class="s-photo"
+         src="images/my_img.jpg"
+         alt="Rakesh Dash"
+         onerror="this.src='images/rakesh.png'">
+
+    <h1 class="s-name">Rakesh Dash</h1>
+    <div class="s-role">Senior Data Engineer</div>
+    <div class="s-company">HSBC · Bengaluru, India</div>
+
+    <p class="s-bio">
+      I build data platforms that organisations depend on.
+      I also teach data engineering and am building
+      AstroVeda, a Vedic astrology platform.
+    </p>
+
+    <nav class="s-nav">
+      <a href="#about">
+        <span class="s-dot"></span> About
+      </a>
+      <a href="#experience">
+        <span class="s-dot"></span> Experience
+      </a>
+      <a href="#projects">
+        <span class="s-dot"></span> Projects
+      </a>
+      <a href="courses.html">
+        <span class="s-dot"></span> Courses
+      </a>
+      <a href="astroveda.html" class="s-astro">
+        <span class="s-dot"></span> ✦ AstroVeda
+      </a>
+      <a href="#contact">
+        <span class="s-dot"></span> Contact
+      </a>
+    </nav>
+
+    <div class="s-links">
+      <a href="https://linkedin.com/in/rakeshdash007" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <span style="color:var(--border)">·</span>
+      <a href="mailto:rakeshdash6180@gmail.com">Email</a>
+      <span style="color:var(--border)">·</span>
+      <a href="courses.html">Courses</a>
+    </div>
+
+  </aside>
+
+  <!-- ── MAIN CONTENT ──────────────────────────── -->
+  <main class="content-col">
+
+    <!-- ABOUT ──────────────────────────────────── -->
+    <section class="prose-section" id="about">
+      <span class="prose-label">About</span>
+      <div class="about-text">
+        <p>
+          I'm a Senior Data Engineer with eight years of experience designing
+          data infrastructure for organisations that cannot afford for their
+          data to fail. My work spans <strong>regulatory reporting at HSBC</strong>,
+          customer intelligence at Zeta Global, and operational analytics at Cyient —
+          across banking, marketing technology, and aerospace.
+        </p>
+        <p>
+          My focus is on data quality, pipeline reliability, and building systems
+          that downstream teams can trust. I work with Python, PySpark, Snowflake,
+          and Apache Airflow, and have been picking up the modern data stack
+          — Databricks, dbt, and Apache Kafka — as it has become standard.
+        </p>
+        <p>
+          Outside of engineering, I create courses through
+          <a href="courses.html">100 Days of Data Engineering</a>, and I'm
+          building <a href="astroveda.html">AstroVeda</a>, a Vedic astrology
+          platform that applies the same data engineering principles I use at work
+          to a domain I've studied for years.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE ─────────────────────────────── -->
+    <section class="prose-section" id="experience">
+      <span class="prose-label">Experience</span>
+      <div class="exp-list">
+
+        <div class="exp-item">
+          <div class="exp-period">Jul 2023<br>Present</div>
+          <div class="exp-body">
+            <h3>AVP — Data Specialist</h3>
+            <div class="exp-note">Senior Data Engineering — ESG &amp; Financial Platforms</div>
+            <div class="exp-co">HSBC Electronic Data Processing India</div>
+            <p>
+              Leading data engineering for ESG and financial reporting pipelines
+              that process over two terabytes of data daily. The work involves
+              designing ingestion pipelines, building automated data quality
+              frameworks using Great Expectations, and establishing CI/CD
+              deployment workflows for ETL jobs across the regulatory reporting
+              estate.
+            </p>
+            <p>
+              Significant projects include standardising vendor data onboarding
+              across eight source systems — cutting time-to-production from six
+              weeks to under two — and optimising PySpark execution time by 45%
+              through partition and join strategy changes. Also enhanced a
+              Document AI pipeline for financial document extraction.
+            </p>
+            <div class="exp-tech">
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">PySpark</span>
+              <span class="exp-tag">Apache Airflow</span>
+              <span class="exp-tag">Great Expectations</span>
+              <span class="exp-tag">Jenkins</span>
+              <span class="exp-tag">CI/CD</span>
+              <span class="exp-tag">AWS</span>
+              <span class="exp-tag">Azure</span>
             </div>
           </div>
         </div>
 
-          <h3>Tools & Platforms</h3>
-          <div class="tools-grid">
-            <div class="tool-item"><i class="fas fa-database"></i><span>Snowflake</span></div>
-            <div class="tool-item"><i class="fas fa-cloud"></i><span>GCP</span></div>
-            <div class="tool-item"><i class="fas fa-cloud"></i><span>Azure</span></div>
-            <div class="tool-item"><i class="fas fa-code-branch"></i><span>Git</span></div>
-            <div class="tool-item"><i class="fas fa-project-diagram"></i><span>Databricks</span></div>
-            <div class="tool-item"><i class="fas fa-cogs"></i><span>Airflow</span></div>
-            <div class="tool-item"><i class="fas fa-tools"></i><span>Jenkins</span></div>
-            <div class="tool-item"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
-            <div class="tool-item"><i class="fas fa-chart-pie"></i><span>Tableau</span></div>
+        <div class="exp-item">
+          <div class="exp-period">Jul 2021<br>May 2023</div>
+          <div class="exp-body">
+            <h3>Data Analyst</h3>
+            <div class="exp-note">Data Engineering &amp; Snowflake Platform</div>
+            <div class="exp-co">Zeta Global · Hyderabad</div>
+            <p>
+              Worked on the customer data platform at a marketing technology
+              company, building Snowflake-based ETL/ELT pipelines processing
+              over fifty million customer records. A significant part of the
+              role involved designing a customer identity resolution system
+              using NLP probabilistic matching — improving match accuracy by
+              35% and contributing directly to revenue growth.
+            </p>
+            <p>
+              Also responsible for consolidating data from ten source systems
+              into a unified reporting layer, reducing the business reporting
+              cycle from four hours to under fifteen minutes.
+            </p>
+            <div class="exp-tech">
+              <span class="exp-tag">SQL</span>
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">PySpark</span>
+              <span class="exp-tag">Snowflake</span>
+              <span class="exp-tag">NLP</span>
+              <span class="exp-tag">Tableau</span>
+            </div>
           </div>
         </div>
+
+        <div class="exp-item">
+          <div class="exp-period">Apr 2018<br>Jul 2021</div>
+          <div class="exp-body">
+            <h3>Reliability Analyst</h3>
+            <div class="exp-note">Python Automation &amp; Data Analytics</div>
+            <div class="exp-co">Cyient Ltd · Hyderabad</div>
+            <p>
+              Started here as a Reliability Analyst and spent three years
+              automating data processing workflows for aerospace engineering
+              operations. Built Python ETL pipelines to handle structured and
+              semi-structured data at scale, and developed Power BI dashboards
+              for operational KPI monitoring.
+            </p>
+            <p>
+              This is where data engineering became the focus — replacing an
+              eight-hour XML processing run with a fifteen-minute Python
+              pipeline was the moment that made the direction clear.
+            </p>
+            <div class="exp-tech">
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">SQL</span>
+              <span class="exp-tag">Power BI</span>
+              <span class="exp-tag">PostgreSQL</span>
+              <span class="exp-tag">XML/ETL</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <hr>
+    </section>
 
-    <!-- Portfolio Projects Section -->
-    <div class="projects">
-      <h2>Portfolio Projects</h2>
-      <div class="project-links">
-        <div class="project-item">
-          <h3>Data Quality Checker</h3>
-          <p>Automated pipeline for validating data integrity and completeness using Python, Pandas, PySpark, and CI/CD integrations.</p>
-          <a class="btn" href="data-quality.html" target="_blank">View Project</a>
+    <!-- PROJECTS ────────────────────────────────── -->
+    <section class="prose-section" id="projects">
+      <span class="prose-label">Selected Work</span>
+      <div class="proj-list-v2">
+
+        <div class="proj-item">
+          <div>
+            <h3>Enterprise ESG Data Platform</h3>
+            <p>Multi-domain ingestion and transformation pipeline for ESG, risk, and financial reporting at HSBC. Includes automated data quality validation, vendor onboarding standardisation, and CI/CD deployment for all ETL workflows.</p>
+            <div class="exp-tech">
+              <span class="exp-tag">PySpark</span>
+              <span class="exp-tag">Great Expectations</span>
+              <span class="exp-tag">Airflow</span>
+              <span class="exp-tag">Jenkins</span>
+            </div>
+          </div>
+          <span class="proj-label">HSBC</span>
         </div>
-        <div class="project-item">
-          <h3>Optimized ETL Pipeline</h3>
-          <p>Highly efficient data workflows with performance tuning in PySpark and Snowflake.</p>
-          <a class="btn" href="etl-pipeline.html" target="_blank">View Project</a>
+
+        <div class="proj-item">
+          <div>
+            <h3>Customer Identity Resolution Platform</h3>
+            <p>NLP-based probabilistic matching and fuzzy deduplication pipeline for fifty million customer records at Zeta Global. Consolidated ten source systems into a single trusted analytics layer used across the business for audience targeting and reporting.</p>
+            <div class="exp-tech">
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">NLP</span>
+              <span class="exp-tag">Snowflake</span>
+              <span class="exp-tag">PySpark</span>
+            </div>
+          </div>
+          <span class="proj-label">Zeta Global</span>
         </div>
-        <div class="project-item">
-          <h3>Probabilistic Matching System</h3>
-          <p>Initial record linkage solution using NLP and fuzzy matching techniques. Early-stage data cleansing and reconciliation strategy.</p>
-          <a class="btn" href="portfolio.html" target="_blank">View Project</a>
+
+        <div class="proj-item">
+          <div>
+            <h3>ESG Data Quality Framework</h3>
+            <p>Open-source template for regulatory-grade data quality validation using Great Expectations. Covers data contracts, SLA monitoring, reconciliation checks, and automated alerting — based on the framework built at HSBC.</p>
+            <div class="exp-tech">
+              <span class="exp-tag">Great Expectations</span>
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">Airflow</span>
+            </div>
+          </div>
+          <span class="proj-label">Open Source</span>
         </div>
+
+        <div class="proj-item">
+          <div>
+            <h3>Metadata-Driven ETL Framework</h3>
+            <p>YAML-configured pipeline framework where data source schemas, transformation logic, and validation rules are defined in configuration rather than code. Significantly reduces the engineering effort for onboarding new data sources.</p>
+            <div class="exp-tech">
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">YAML</span>
+              <span class="exp-tag">Airflow</span>
+            </div>
+          </div>
+          <span class="proj-label">Open Source</span>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3>Predictive Maintenance Analytics</h3>
+            <p>Python automation pipeline replacing manual XML processing workflows in aerospace engineering operations. Reduced a recurring eight-hour processing task to under fifteen minutes, with Power BI dashboards for operational visibility.</p>
+            <div class="exp-tech">
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">Power BI</span>
+              <span class="exp-tag">PostgreSQL</span>
+            </div>
+          </div>
+          <span class="proj-label">Cyient</span>
+        </div>
+
       </div>
+    </section>
+
+    <!-- OTHER WORK ──────────────────────────────── -->
+    <section class="prose-section" id="other">
+      <span class="prose-label">Other Work</span>
+      <div class="other-grid">
+
+        <a href="courses.html" class="other-card">
+          <div class="other-icon">🚀</div>
+          <div class="other-title">100 Days of Data Engineering</div>
+          <div class="other-desc">A structured bootcamp covering the full modern data stack — from Python fundamentals to production ETL/ELT, Snowflake, Airflow, and cloud platforms.</div>
+          <span class="other-arrow">View course →</span>
+        </a>
+
+        <a href="astroveda.html" class="other-card gold">
+          <div class="other-icon">🪐</div>
+          <div class="other-title">AstroVeda</div>
+          <div class="other-desc">A Vedic astrology platform I'm building — Kundli generation, Nakshatra analysis, Dasha periods, and eventually AI-powered chart interpretation.</div>
+          <span class="other-arrow" style="color:#D4A847">Learn more →</span>
+        </a>
+
+        <a href="courses.html#content" class="other-card">
+          <div class="other-icon">✍️</div>
+          <div class="other-title">Writing &amp; Tutorials</div>
+          <div class="other-desc">Articles on data engineering, pipeline performance, and career advice. Published on Medium and Dev.to alongside YouTube tutorials.</div>
+          <span class="other-arrow">Read articles →</span>
+        </a>
+
+        <a href="courses.html#content" class="other-card">
+          <div class="other-icon">▶️</div>
+          <div class="other-title">YouTube</div>
+          <div class="other-desc">PySpark deep dives, Snowflake walkthroughs, ETL build-alongs, and data engineering career content.</div>
+          <span class="other-arrow">Watch →</span>
+        </a>
 
       </div>
-    </div>
-    <hr>
+    </section>
 
-    <!-- GitHub Testimonials Section -->
-    <div class="testimonials">
-      <h2>What I've Delivered</h2>
-      <div class="testimonial-cards">
-        <div class="testimonial">
-          <p><i class="fas fa-code-branch"></i> "Built high-performance data pipelines with 85%+ test coverage, reducing data lag to under 5 minutes."</p>
-        </div>
-        <div class="testimonial">
-          <p><i class="fas fa-fingerprint"></i> "Implemented scalable record linkage with probabilistic scoring, improving match accuracy by 92%."</p>
-        </div>
-        <div class="testimonial">
-          <p><i class="fas fa-tachometer-alt"></i> "Optimized PySpark transformations to reduce ETL runtime by 40% across 50M+ daily records."</p>
-        </div>
+    <!-- CONTACT ─────────────────────────────────── -->
+    <section class="prose-section contact-v2" id="contact">
+      <span class="prose-label">Contact</span>
+      <h2>Get in touch</h2>
+      <p>
+        I'm open to Senior Data Engineer, Analytics Engineer, and Data Platform
+        Engineer roles. Also happy to discuss collaborations on courses, content,
+        or the AstroVeda platform.
+      </p>
+      <div class="c-links">
+        <button class="btn btn-outline" id="copy-btn" onclick="copyEmail('copy-btn')">
+          ✉ rakeshdash6180@gmail.com
+        </button>
+        <a href="https://linkedin.com/in/rakeshdash007"
+           target="_blank" rel="noreferrer"
+           class="btn btn-ghost">
+          LinkedIn ↗
+        </a>
       </div>
-    </div>
-    <hr>
+    </section>
 
-    <!-- Contact Section -->
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>For data engineering and matching algorithm projects</h3>
-      <p class="contact-message">Interested in robust data solutions or probabilistic matching implementations? Let's discuss!</p>
-      <a class="btn" href="mailto:rakeshdash6180@gmail.com">CONTACT ME</a>
-    </div>
-  </div>
+  </main>
+</div>
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/rakeshdash007"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a class="footer-link" href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a>
-    <a class="footer-link" href="Resume.pdf"><i class="fas fa-file-pdf"></i> Resume</a>
-    <a class="footer-link" href="portfolio.html"><i class="fas fa-laptop-code"></i> Portfolio</a>
-    <p class="copyright">© <span id="year"></span> Rakesh Dash. All rights reserved.</p>
-  </div>
+<script src="js/main.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document.getElementById('year').textContent = new Date().getFullYear();
-      animateSkillBars();
+<script>
+  /* Highlight sidebar nav on scroll */
+  const sections = ['about','experience','projects','other','contact'];
+  const links = document.querySelectorAll('.s-nav a');
+
+  function onScroll() {
+    let current = '';
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top < 160) current = id;
     });
+    links.forEach(a => {
+      a.classList.remove('s-active');
+      if (a.getAttribute('href') === '#' + current) a.classList.add('s-active');
+    });
+  }
 
-    function animateSkillBars() {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const bar = entry.target;
-            const percent = bar.getAttribute('data-percent');
-            bar.querySelector('.bar-fill').style.width = percent + '%';
-            observer.unobserve(bar);
-          }
-        });
-      }, { threshold: 0.5 });
-
-      document.querySelectorAll('.bar').forEach(bar => {
-        observer.observe(bar);
-      });
-    }
-  </script>
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>
 </body>
 </html>
